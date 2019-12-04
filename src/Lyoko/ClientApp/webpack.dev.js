@@ -17,5 +17,11 @@ module.exports = merge(common, {
 			ca: fs.readFileSync(path.resolve(__dirname, "../Certificates/localhost.pem"))
 		},
 		http2: true*/
+		proxy: {
+			"/api": {
+				target: "https://localhost:44339",
+				secure: false
+			}
+		}
 	}
 });
