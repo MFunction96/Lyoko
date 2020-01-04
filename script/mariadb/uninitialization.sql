@@ -1,0 +1,3 @@
+DROP DATABASE Lyoko;
+DROP USER 'Aelita'@'localhost';
+FLUSH PRIVILEGES;
