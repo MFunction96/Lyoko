@@ -19,7 +19,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: npm install, build, and test
       run: |
-        cd ./src/ClientApp
+        cd /home/runner/work/Lyoko/Lyoko/src/ClientApp
         npm install
         npm run prod --if-present
       env:
