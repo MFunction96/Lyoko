@@ -11,19 +11,10 @@ module.exports = {
 		index: "./src/index.tsx"
 	},
 	plugins: [
-		// new CleanWebpackPlugin(['dist/*']) for < v2 versions of CleanWebpackPlugin
 		new CleanWebpackPlugin(),
 		new HtmlWebpackPlugin({
 			title: "Lyoko",
-			mobile: true,
-			lang: "zh-CN",
-			inject: false,
-			template: require("html-webpack-template"),
-			appMountId: "root",
-			googleAnalytics: {
-				trackingId: "UA-93890730-1",
-				pageViewOnLoad: true
-			},
+			template: "./public/index.html",
 			favicon: "./public/favicon.ico"
 		}),
 		new ManifestPlugin({
